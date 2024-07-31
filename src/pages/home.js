@@ -3,7 +3,9 @@ import Logo2 from "../assests/hero image 2.png";
 import "../css/universal.css";
 import "../css/button.css"
 import "../css/homePage.css"
+import ContactPage from "../pages/contact"
 import Navigation from "../components/navigationBar";
+import { Route, Routes } from "react-router-dom";
 function Home() {
   return (
     <div className="top">

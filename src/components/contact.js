@@ -1,9 +1,11 @@
+import { useNavigate } from "react-router-dom";
 import "../css/button.css";
-function contact() {
+function Contact() {
+  const history=useNavigate();
   return (
     <>
-      <h2 className="contact">contact Us</h2>
+     <button className="contact" onClick={() =>history("/Contact")} style={{cursor:"pointer"}}>contact Us</button>
     </>
   );
 }
-export default contact;
+export default Contact;

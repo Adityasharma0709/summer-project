@@ -1,11 +1,16 @@
 import "../css/button.css";
-function navigationBar() {
+import Heading from "../components/heading";
+import Contact from "../components/contact";
+
+
+function NavigationBar() {
+
   return (
     <nav className="navigationBar">
-      <h1 className="heading">B.Planet</h1>
-      <button className="contact">contact Us</button>
+      <Heading />
+      <Contact />
     </nav>
   );
 }
 
-export default navigationBar;
+export default NavigationBar;

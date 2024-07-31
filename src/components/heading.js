@@ -1,9 +1,11 @@
 import "../css/button.css"
-function heading() {
+import { useNavigate } from "react-router-dom";
+function Heading() {
+  const history=useNavigate();
   return (
     <>
-      <h1 className="heading">B.Planet</h1>
+    <h1 className="heading" onClick={() =>history("/")}>B.Planet</h1>
     </>
   );
 }
-export default heading;
+export default Heading;
